@@ -26,7 +26,12 @@ namespace _8_Bit_Bazaar
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form6 f6 = new Form6();
+            //this.Hide();
+            f6.Show();
         }
+        
+       
+       
     }
 }
