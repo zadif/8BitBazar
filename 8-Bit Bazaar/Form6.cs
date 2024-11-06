@@ -39,25 +39,30 @@ namespace _8_Bit_Bazaar
             p.Size = new Size(125, 155);
             p.Margin = new Padding(30);
             
-            p.Top = countt * 160;
-            p.Left = countl*140;
+            p.Top = countt * 170;
+            p.Left = countl*160;
             
             Label title=new Label();
             title.Location = new Point(12, 10);
             title.Text = arc.CName;
+            title.Font = new Font("Arial", 15);
             Label title2 = new Label();
             title2.Location = new Point(12, 35);
             title2.Text = arc.Model;
-
+            title2.Font = new Font("Arial", 15);
             Label price = new Label();
             price.Location = new Point(12, 70);
             price.Text = "$"+arc.Price;
-
+            price.Font = new Font("Arial", 17, FontStyle.Bold);
             Button btn = new Button();
             btn.Text = "Buy Me";
             btn.Location = new Point(12, 100);
-
-            
+            btn.AutoSize = true;
+            btn.BackColor = Color.White;
+            btn.Padding = new Padding(6);
+            btn.Font = new Font("Segoe UI Black, MT", 10);
+            //btn.Location = new Point((p.Width - btn.Width) / 2);
+            btn.Anchor = AnchorStyles.None;
             count++ ;
             countl++ ;
             p.Controls.Add(title);
@@ -81,15 +86,32 @@ namespace _8_Bit_Bazaar
             {
                 MessageBox.Show("Error jnab Error");
             }
-
             Button btn = new Button();
-            btn.Text = "Go Back";
-            btn.Margin = new Padding(20);
-            btn.Name = "goback";
+            btn.Text = "Buy34";
+            btn.Location = new Point(this.ClientSize.Width - btn.Width - 12, this.ClientSize.Height - btn.Height - 12);
+            btn.AutoSize = true;
+            btn.BackColor = Color.White;
+            btn.Padding = new Padding(6);
+            btn.Font = new Font("Segoe UI Black, MT", 10);
+            btn.Anchor = AnchorStyles.None;
+            this.Scroll += (sender, e) => { btn.Location = new Point(this.ClientSize.Width - btn.Width - 20, this.ClientSize.Height - btn.Height - 20); };
+         
+            btn.Click += new EventHandler(this.Btn_Click);
+            this.Controls.Add(btn);
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Btn_Click(object sender, EventArgs e){ 
+            hero heroForm = new hero(); 
+            heroForm.Show();
+        }
+            private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
