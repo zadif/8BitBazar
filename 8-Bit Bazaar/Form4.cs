@@ -19,7 +19,10 @@ namespace _8_Bit_Bazaar
         public Form4()
         {
             InitializeComponent();
+            textBox2.UseSystemPasswordChar = true;
+
         }
+        public bool flag = true;
 
         private void Form4_Load(object sender, EventArgs e)
         {
@@ -70,6 +73,29 @@ namespace _8_Bit_Bazaar
                 her.Show();
             }
            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+            Form3 f = new Form3();
+            this.Hide();
+            f.Show();
+        }
+       
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = !flag;
+            flag = !flag;
+            if (flag)
+            {
+                button1.Text = "Show";
+            }
+            else
+            {
+                button1.Text = "Hide";
+            }
         }
     }
 }

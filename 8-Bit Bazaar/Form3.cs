@@ -112,13 +112,18 @@ namespace _8_Bit_Bazaar
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
                 textBox4.UseSystemPasswordChar = !flag;
                 textBox5.UseSystemPasswordChar = !flag;
                 flag = !flag;
+            if (flag)
+            {
+                button1.Text = "Show";
+            }
+            else
+            {
+                button1.Text = "Hide";
+            }
             
-           
-
         }
 
         

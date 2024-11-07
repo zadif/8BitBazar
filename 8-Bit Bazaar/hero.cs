@@ -30,8 +30,11 @@ namespace _8_Bit_Bazaar
             this.Hide();
             f6.Show();
         }
-        
-       
-       
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            logout l = new logout(this);
+            l.Show();
+        }
     }
 }
