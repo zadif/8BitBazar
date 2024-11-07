@@ -7,7 +7,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 namespace _8_Bit_Bazaar
 {
-    internal class Arcade
+    public  class Arcade
     {
 
         [BsonId] public ObjectId Id { get; set; }
@@ -29,9 +29,15 @@ namespace _8_Bit_Bazaar
         [BsonElement("games")]
         public string Games { get; set; }
 
-        [BsonElement("user")]
-        public string User { get; set; }
-        public Arcade(string nam, string mode, double yea, double price, string desc,string gam, string user)
+        [BsonElement("seller")]
+        public ObjectId Seller { get; set; }
+
+        [BsonElement("buyer")]
+        public ObjectId Buyer { get; set; }
+
+        [BsonElement("isSold")]
+        public bool isSold { get; set; }
+        public Arcade(string nam, string mode, double yea, double price, string desc,string gam, ObjectId sellerid)
         {
             CName = nam;
             Model = mode;
@@ -39,7 +45,8 @@ namespace _8_Bit_Bazaar
             Price = price;
             Description = desc;
             Games = gam;
-            User = user;
+            Seller = sellerid;
+            isSold = false;
         }
     }
 }

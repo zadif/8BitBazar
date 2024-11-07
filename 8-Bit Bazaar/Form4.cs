@@ -38,7 +38,6 @@ namespace _8_Bit_Bazaar
                 }
 
 
-                // Creates a filter for all documents that have a "name" value of "Bagels N Buns"
                 var filter = Builders<User>.Filter
                     .Eq(u => u.Email, textBox1.Text);
                 // Asynchronously retrieves the first document that matches the filter

@@ -72,7 +72,7 @@ namespace _8_Bit_Bazaar
                     return;
                 }
 
-                Arcade a = new Arcade(textBox1.Text, textBox2.Text, Double.Parse(textBox3.Text), Double.Parse(textBox4.Text), textBox5.Text, textBox6.Text, userInfo.user.Id.ToString());
+                Arcade a = new Arcade(textBox1.Text, textBox2.Text, year, price, textBox5.Text, textBox6.Text, userInfo.user.Id);
                 collection.InsertOne(a);
                 User u = userInfo.user;
                 userInfo.user.Sell.Add(a.Id.ToString());

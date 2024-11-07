@@ -29,6 +29,8 @@ namespace _8_Bit_Bazaar
         [BsonElement("email")]
         public string Email { get; set; }
 
+        [BsonElement("rating")]
+        public float Rating { get; set; }
         public List<string> Sell { get; set; }
         public List<string> Buy { get; set; }
         public User(string nam,string pass,double num,string gen, string ema)
@@ -40,6 +42,7 @@ namespace _8_Bit_Bazaar
             Email = ema;
             Sell = new List<string>();
             Buy = new List<string>();
+            Rating = 5;//default rating
         }
     }
 }
