@@ -36,5 +36,18 @@ namespace _8_Bit_Bazaar
             logout l = new logout(this);
             l.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            userHistory u = new userHistory();
+            u.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            updateProfile u = new updateProfile();
+            this.Hide();
+            u.Show();
+        }
     }
 }

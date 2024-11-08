@@ -219,6 +219,12 @@
     <Compile Include="rateArcade.Designer.cs">
       <DependentUpon>rateArcade.cs</DependentUpon>
     </Compile>
+    <Compile Include="userHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userHistory.Designer.cs">
+      <DependentUpon>userHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="userInfo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -292,6 +298,9 @@
     </Compile>
     <EmbeddedResource Include="rateArcade.resx">
       <DependentUpon>rateArcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userHistory.resx">
+      <DependentUpon>userHistory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
