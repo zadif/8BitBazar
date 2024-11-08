@@ -219,6 +219,18 @@
     <Compile Include="rateArcade.Designer.cs">
       <DependentUpon>rateArcade.cs</DependentUpon>
     </Compile>
+    <Compile Include="updatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePassword.Designer.cs">
+      <DependentUpon>updatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateProfile.Designer.cs">
+      <DependentUpon>updateProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="userHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,6 +310,12 @@
     </Compile>
     <EmbeddedResource Include="rateArcade.resx">
       <DependentUpon>rateArcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePassword.resx">
+      <DependentUpon>updatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateProfile.resx">
+      <DependentUpon>updateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userHistory.resx">
       <DependentUpon>userHistory.cs</DependentUpon>
