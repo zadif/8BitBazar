@@ -195,6 +195,18 @@
     <Compile Include="buyingArcade.Designer.cs">
       <DependentUpon>buyingArcade.cs</DependentUpon>
     </Compile>
+    <Compile Include="editingArcade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editingArcade.Designer.cs">
+      <DependentUpon>editingArcade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editListing.Designer.cs">
+      <DependentUpon>editListing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +285,12 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="buyingArcade.resx">
       <DependentUpon>buyingArcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editingArcade.resx">
+      <DependentUpon>editingArcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editListing.resx">
+      <DependentUpon>editListing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -49,5 +49,12 @@ namespace _8_Bit_Bazaar
             this.Hide();
             u.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            editListing e2 = new editListing();
+            e2.Show();
+            this.Hide();
+        }
     }
 }

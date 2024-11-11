@@ -125,6 +125,7 @@
             this.button5.TabIndex = 19;
             this.button5.Text = "Edit your Arcades";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox3
             // 
