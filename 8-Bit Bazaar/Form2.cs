@@ -24,9 +24,12 @@ namespace _8_Bit_Bazaar
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if((textBox2.Text=="zadif" || textBox2.Text == "Zadif" || textBox2.Text == "ZADIF") && textBox2.Text == "123")
+            if((textBox1.Text=="zadif" || textBox1.Text == "Zadif" || textBox1.Text == "ZADIF") && textBox2.Text == "123")
             {
                 MessageBox.Show("Loged in as admin");
+                adminMenu a = new adminMenu();
+                a.Show();
+                this.Hide();
             }
             else
             {

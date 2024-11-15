@@ -38,11 +38,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(154, 9);
+            this.label1.Location = new System.Drawing.Point(212, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 64);
+            this.label1.Size = new System.Drawing.Size(143, 64);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Sign Up Page";
+            this.label1.Text = "Logout";
             // 
             // button4
             // 
@@ -59,6 +59,7 @@
             this.button4.TabIndex = 19;
             this.button4.Text = "Logout";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
