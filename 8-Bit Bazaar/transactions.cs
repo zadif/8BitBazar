@@ -42,6 +42,7 @@ namespace _8_Bit_Bazaar
                 countl = 1;
                 count = 1;
             }
+           
             Panel p = new Panel();
             p.BackColor = Color.White;
             p.Size = new Size(145, 170);
