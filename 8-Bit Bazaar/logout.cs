@@ -27,6 +27,20 @@ namespace _8_Bit_Bazaar
                 h.Hide();
             };
         }
+        public logout(adminMenu a)
+        {
+            InitializeComponent();
+            button4.Click += (sender, e) =>
+            {
+                Form1 f = new Form1();
+                this.Hide();
+                f.Show();
+                a.Hide();
+            };
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

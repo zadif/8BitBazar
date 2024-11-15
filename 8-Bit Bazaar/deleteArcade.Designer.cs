@@ -51,7 +51,6 @@
             this.button4.FlatAppearance.BorderSize = 2;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.Location = new System.Drawing.Point(176, 205);
             this.button4.Name = "button4";
