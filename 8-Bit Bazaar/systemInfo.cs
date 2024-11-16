@@ -55,6 +55,7 @@ namespace _8_Bit_Bazaar
             l.ForeColor = Color.White;
             Label l2 = new Label();
             l2.Location = new Point(22, 180);
+
             l2.Size = new Size(700, 60);
             l2.Text = "Total users in the system: " + totalUsers;
             l2.Font = new Font("Bahnschrift SemiLight Condensed", 20.75f, FontStyle.Bold);
