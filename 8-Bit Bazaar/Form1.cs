@@ -28,7 +28,7 @@ namespace _8_Bit_Bazaar
             
             Form2 form2 = new Form2();
             form2.Show();
-            
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

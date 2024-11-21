@@ -52,6 +52,7 @@
             this.Controls.Add(this.label1);
             this.Name = "transactions";
             this.Text = "transactions";
+            this.Load += new System.EventHandler(this.transactions_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

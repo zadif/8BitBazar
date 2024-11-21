@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static MongoDB.Driver.WriteConcern;
+using static TheArtOfDev.HtmlRenderer.Adapters.RGraphicsPath;
 
 namespace _8_Bit_Bazaar
 {
@@ -31,10 +32,27 @@ namespace _8_Bit_Bazaar
         {
 
             string machineName = arc.CName +" "+arc.Model +" sold by ";
-            User owner=collection.Find(a => a.Id==arc.Seller).FirstOrDefault();
-            User buyer = collection.Find(a => a.Id == arc.Buyer).FirstOrDefault();
-            string ownerName = owner.Username+ " to ";
-            string buyerName = buyer.Username + " for $";
+            string ownerName = " ", buyerName = " ";
+            try
+            {
+                User owner = collection.Find(a => a.Id == arc.Seller).FirstOrDefault();
+                 ownerName = owner.Username + " to ";
+            }
+            catch
+            {
+               ownerName =" User Not Found ";
+            }
+            try
+            {
+                User buyer = collection.Find(a => a.Id == arc.Buyer).FirstOrDefault();
+                buyerName = buyer.Username + " for $";
+            }
+            catch
+            {
+                buyerName = " User Not Found ";
+
+            }
+
 
             if (count > 3)
             {
@@ -95,5 +113,9 @@ namespace _8_Bit_Bazaar
             return true;
         }
 
+        private void transactions_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

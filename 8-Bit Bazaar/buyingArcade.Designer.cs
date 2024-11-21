@@ -62,7 +62,6 @@
             this.button2.TabIndex = 47;
             this.button2.Text = "Buy";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox6
             // 
@@ -224,7 +223,6 @@
             this.button1.TabIndex = 48;
             this.button1.Text = "🎮 Arcades";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buyingArcade
             // 
@@ -250,7 +248,6 @@
             this.Controls.Add(this.label1);
             this.Name = "buyingArcade";
             this.Text = "buyingArcade";
-            this.Load += new System.EventHandler(this.buyingArcade_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

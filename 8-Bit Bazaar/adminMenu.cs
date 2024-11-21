@@ -35,5 +35,20 @@ namespace _8_Bit_Bazaar
             transactions t = new transactions();
             t.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            viewArcadesAdmin n = new viewArcadesAdmin();
+            n.Show();
+            this.Hide();
+                
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            viewUsers v = new viewUsers();
+            v.Show();
+            this.Hide();
+        }
     }
 }

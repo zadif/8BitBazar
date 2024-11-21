@@ -60,8 +60,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 48);
             this.button1.TabIndex = 5;
-            this.button1.Text = "View all Machines";
+            this.button1.Text = "View all Arcades";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -78,6 +79,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "View all Users";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 

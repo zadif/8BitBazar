@@ -29,11 +29,32 @@ namespace _8_Bit_Bazaar
                 a1.Show();
                 this.Hide();
             };
+            button1.Click += (sender, e) =>
+            {
+                Form6 f = new Form6();
+                this.Hide();
+                f.Show();
+            };
         }
         public buyingArcade()
         {
             InitializeComponent();
            
+        }
+        public buyingArcade(Arcade a,bool x)
+        {//when admin wants to view the forum
+
+            InitializeComponent();
+            label1.Text = "View an Arcade";
+            showInfo(a);
+
+            button1.Click += (sender, e) =>
+            {
+                viewArcadesAdmin n = new viewArcadesAdmin();
+                n.Show();
+                this.Hide();
+            };
+            button2.Hide();
         }
         private void showInfo(Arcade a)
         {
@@ -59,22 +80,6 @@ namespace _8_Bit_Bazaar
             this.Controls.Add(l);
 
         }
-        private void buyingArcade_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        { 
-            Form6 f = new Form6();
-            this.Hide();
-            f.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-           
-        }
+        
     }
 }
